@@ -13,30 +13,38 @@ import static java.lang.System.out;
  */
 public class SingleThreadObservable {
     public static void main(String[] args) throws InterruptedException {
+        Object waitMonitor = new Object();
+        synchronized (waitMonitor){
+            out.println("Start");
+            printCurrentThreadName();
+            Observable<Integer> integerObservable = Observable.fromIterable(DataGenerator.generateFibonacci());
+            integerObservable
+                    //.subscribeOn(Schedulers.computation())
+                    .observeOn(Schedulers.io())
+                    .subscribe(
+                            (i) -> {
+                                out.println("onNext thread ");
+                                printCurrentThreadName();
+                                out.println(i);
+                                printCurrentThreadName();
+                            },
+                            //on error
+                            (t) -> {
+                                t.printStackTrace();
+                            },
+                            () -> {
+                                out.println("onCompleted");
+                                printCurrentThreadName();
+                                synchronized (waitMonitor){
+                                    waitMonitor.notify();
+                                }
+                            }
+                    );
+            ThreadUtils.wait(waitMonitor);
+        }
 
-        out.println("Start");
-        printCurrentThreadName();
-        Observable<Integer> integerObservable = Observable.fromIterable(DataGenerator.generateFibonacci());
-
-        integerObservable
-                .subscribeOn(Schedulers.newThread())
-                .subscribe(
-                        (i) -> {
-                            out.println("onNext thread ");
-                            printCurrentThreadName();
-                            out.println(i);
-                            printCurrentThreadName();
-                        },
-                        //on error
-                        (t) -> {
-                            t.printStackTrace();
-                        },
-                        () -> {
-                            out.println("onCompleted");
-                            printCurrentThreadName();
-                        }
-                );
-        System.exit(0);
+        //System.exit(0);
+        //Thread.sleep(5000);
     }
 
     public static void printCurrentThreadName() {

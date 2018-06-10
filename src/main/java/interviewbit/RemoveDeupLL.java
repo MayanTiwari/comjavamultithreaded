@@ -10,12 +10,13 @@ public class RemoveDeupLL {
         RemoveDeupLL removeDeupLL = new RemoveDeupLL();
         ListNode head = new ListNode(2);
         head.next = new ListNode(2);
-        head.next.next = new ListNode(2);
-        head.next.next.next = new ListNode(3);
+        head.next.next = new ListNode(5);
+        head.next.next.next = new ListNode(6);
         head.next.next.next.next = new ListNode(4);
+        head.next.next.next.next.next = new ListNode(4);
         //head.next.next.next.next.next = new ListNode(3);
 
-        removeDeupLL.deleteDuplicatesDist(head);
+        head = removeDeupLL.deleteDuplicatesDist(head);
         ListNode.printLL(head);
     }
     //use sorted list and remove duplicates
@@ -45,33 +46,28 @@ public class RemoveDeupLL {
         return A;
     }
     public ListNode deleteDuplicatesDist(ListNode A) {
-        /*Another reference to head*/
         ListNode current = A;
         ListNode prev = null;
         ListNode temp = null;
-
-        /* Pointer to store the next pointer of a node to be deleted*/
-        ListNode next_next;
-        /* do nothing if the list is empty */
         if (current == null)
             return null;
-
-        /* Traverse list till the last node */
         while (current.next != null) {
-            /*Compare current node with the next node */
             boolean containsDup = false;
-            while(current.next!=null && current.val == current.next.val){
+            while(current.next !=null && current.val == current.next.val){
                 current = current.next;
                 containsDup = true;
             }
             if(containsDup){
-                if(prev == null){
-                    //current = current.next;
+                if(prev == null && current.next !=null){
                     temp = current.next;
                     current.next = null;
-                    current = temp;
-                }else{
+                    current= A = temp;
+                }else if(current.next !=null){
                     prev.next = current.next;
+                }else if(prev !=null) {
+                     prev.next= null;//prev;
+                }else {
+                    A = null;
                 }
 
             }else{

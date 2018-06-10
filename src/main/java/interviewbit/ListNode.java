@@ -1,11 +1,11 @@
 package interviewbit;
-
 import static java.lang.System.out;
 
 /**
  * Created by mayan on 3/6/18.
  */
 public class ListNode {
+
     public int val;
     public ListNode next;
     ListNode(int x) {

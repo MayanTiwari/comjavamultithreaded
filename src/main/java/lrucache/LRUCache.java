@@ -20,7 +20,6 @@ import java.util.Queue;
  cache.get(4);       // returns 4
  */
 public class LRUCache {
-
     class Node{
         int data;
         Node prev,next;
@@ -32,6 +31,15 @@ public class LRUCache {
     public LRUCache(int size) {
         this.size = size;
     }
+
+    public static void main(String[] args){
+        LRUCache aLruCache = new LRUCache(2);
+        aLruCache.put(10,10);
+        aLruCache.put(11,11);
+        int test = aLruCache.get(11);
+        aLruCache.put(12,12);
+    }
+
     public int get(int key){
         if(integerIntegerMap.containsKey(key)){
             Node node = integerIntegerMap.get(key);

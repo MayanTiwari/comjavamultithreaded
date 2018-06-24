@@ -16,23 +16,22 @@ import static java.lang.System.out;
  */
 public class ConsistentHash<T> {
     public static void main(String[] args){
-       /* ArrayList<String> al = new ArrayList<String>();
+     ArrayList<String> al = new ArrayList<String>();
         al.add("redis1");
         al.add("redis2");
         al.add("redis3");
         al.add("redis4");
         String[] userIds =
-                {"-84942321036308",
-                        "-76029520310209",
-                        "-68343931116147",
-                        "-54921760962352"
+                {"-3641349505369478014"//,
+                       // "-76029520310209",
+                       // "-68343931116147",
+                       // "-54921760962352"
                 };
-        ConsistentHash<String> consistentHash = new ConsistentHash<>(Hashing.md5(),10,al);
+        ConsistentHash<String> consistentHash = new ConsistentHash<>(Hashing.md5(),1,al);
         for (String userId : userIds) {
             System.out.println(consistentHash.get(userId));
         }
-*/
-        String[] userIds =
+       /*String[] userIds =
                 {"-84942321036308",
                         "-76029520310209",
                         "-68343931116147",
@@ -46,7 +45,7 @@ public class ConsistentHash<T> {
         out.println(longStringTreeMap.tailMap((long)14));
         SortedMap<Long, String> tailMap = longStringTreeMap.tailMap((long)14);
         out.println(tailMap.firstKey());
-
+*/
     }
     private final HashFunction hashFunction;
     private final int numberOfReplicas;

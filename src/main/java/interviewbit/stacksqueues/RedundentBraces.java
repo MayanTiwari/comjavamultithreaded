@@ -2,13 +2,15 @@ package interviewbit.stacksqueues;
 
 import java.util.Stack;
 
+import static java.lang.System.out;
+
 /**
  * Created by mayan on 20/6/18.
  */
 public class RedundentBraces {
     public static void main(String[] args){
         RedundentBraces redundentBraces = new RedundentBraces();
-        redundentBraces.braces("");
+        out.println(redundentBraces.braces(""));
 
     }
     public int braces(String A) {
@@ -20,8 +22,10 @@ public class RedundentBraces {
                 while(!s.isEmpty() && s.peek() != '('){
                     s.pop();
                 }
-                s.pop();
-                if(s.peek() == '(') return 0;
+                if(s.size()>0){
+                    s.pop();
+                }
+                if(s.size()> 0 && s.peek() == '(') return 1;
                 s.push('a');
             }else {//if(input.charAt(i) == '(' || isOperator(input.charAt(i))){
                 s.push(input.charAt(i));
@@ -29,9 +33,9 @@ public class RedundentBraces {
                // return 0;
            // }
         }
-        if(s.size() == 1) return 1;
+        if(s.size() == 1) return 0;
 
-        return 0;
+        return 1;
     }
     private static boolean isOperator(Character input){
         if(input == '+' || input == '*'

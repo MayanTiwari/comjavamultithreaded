@@ -1,6 +1,8 @@
 package javacollections;
 
 import java.util.*;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Created by mayan on 22/6/18.
@@ -39,5 +41,19 @@ public class TheList {
         while (integerSkipIterator.hasNext()){
             System.out.println(integerSkipIterator.next());
         }
+        HashSet<Integer> integers = new HashSet<>();
+        HashMap<Integer,Integer> integerHashMap = new HashMap<>();
+        Map<Integer,Integer> integerMap = new TreeMap<>();
+        Queue<Integer> integerQueue = new LinkedBlockingQueue<>(10);
+        Queue<Integer> integerAQueue = new ArrayBlockingQueue<Integer>(10);
+        Queue<Integer> syncQueue = new SynchronousQueue<>(false);
+        //Queue<Integer> delayQueue = new DelayQueue<>(100);
+        TransferQueue<Integer> transferQueue = new LinkedTransferQueue<>();
+        ConcurrentHashMap<Integer,Integer> integerIntegerConcurrentHashMap = new ConcurrentHashMap<>();
+
+
+
+
+
     }
 }

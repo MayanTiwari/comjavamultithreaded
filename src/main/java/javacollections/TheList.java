@@ -3,6 +3,7 @@ package javacollections;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.LongAdder;
 
 /**
  * Created by mayan on 22/6/18.
@@ -50,6 +51,8 @@ public class TheList {
         //Queue<Integer> delayQueue = new DelayQueue<>(100);
         TransferQueue<Integer> transferQueue = new LinkedTransferQueue<>();
         ConcurrentHashMap<Integer,Integer> integerIntegerConcurrentHashMap = new ConcurrentHashMap<>();
+        LongAdder longAdder;
+        List<Integer> copyOnList = new CopyOnWriteArrayList<>();
 
 
 

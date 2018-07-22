@@ -3,6 +3,7 @@ package javacollections;
 import com.sun.org.apache.xerces.internal.util.SymbolTable;
 
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -16,6 +17,7 @@ public class ConcurrentPackageRef {
         CopyOnWriteArrayList<String> strings1 = new CopyOnWriteArrayList<>();
         BlockingDeque<String> stringBlockingDeque = new LinkedBlockingDeque<>();
         Set<Integer> integerSet = new TreeSet<>();
+        TreeMap<Integer,Integer> integerIntegerTreeMap = new TreeMap<>();
 
     }
 }

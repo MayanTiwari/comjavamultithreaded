@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.concurrent.ConcurrentHashMap;
+
+import static java.lang.System.out;
 
 /**
  * Created by mayan on 8/6/18.
@@ -20,17 +23,6 @@ import java.util.Queue;
  cache.get(4);       // returns 4
  */
 public class LRUCache {
-    class Node{
-        int data;
-        Node prev,next;
-    }
-    Node head;
-    Node tail;
-    private final Map<Integer,Node> integerIntegerMap = new HashMap<>();
-    int size = 0;
-    public LRUCache(int size) {
-        this.size = size;
-    }
 
     public static void main(String[] args){
         LRUCache aLruCache = new LRUCache(2);
@@ -38,6 +30,29 @@ public class LRUCache {
         aLruCache.put(11,11);
         int test = aLruCache.get(11);
         aLruCache.put(12,12);
+        ;
+        out.println(aLruCache.integerIntegerMap.keySet());
+    }
+    //User this as doubly link list.
+    class Node{
+        int data;
+        Node prev,next;
+
+        public Node(int data) {
+            this.data = data;
+        }
+    }
+    //recent item
+    Node head;
+    //good to remove item.
+    Node tail;
+    //map to store ket and nodes for O(1) get and put.
+    private final Map<Integer,Node> integerIntegerMap = new HashMap<>();
+
+    int size = 0;
+
+    public LRUCache(int size) {
+        this.size = size;
     }
 
     public int get(int key){
@@ -48,15 +63,31 @@ public class LRUCache {
         }else return -1;
     }
     public void put(int key,int value){
-        if(integerIntegerMap.size() == size){
-                integerIntegerMap.remove(key);
-                removeLRU();
-
+        Node node =integerIntegerMap.get(key);
+        if(node !=null){
+            node.data = value;
+            updateLinkList(node);
         }else{
-
-            //integerIntegerMap.put(key,value);
+            node = new Node(value);
+            integerIntegerMap.put(key,node);
+            addNodeToHead(node);
+        }
+        if(integerIntegerMap.size() == size){
+            removeLRU();
         }
     }
+
+    private void addNodeToHead(Node node) {
+        if(head == null){
+            head = node;
+            tail = node;
+        }else{
+            node.next = head;
+            head.prev = node;
+            head = node;
+        }
+    }
+
     private void removeLRU(){
         if(tail == null) return;
         //remove
@@ -96,8 +127,5 @@ public class LRUCache {
            head.prev =node;
            node = head ;
        }
-
-
-
     }
 }

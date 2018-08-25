@@ -53,6 +53,9 @@ public class TheList {
         ConcurrentHashMap<Integer,Integer> integerIntegerConcurrentHashMap = new ConcurrentHashMap<>();
         LongAdder longAdder;
         List<Integer> copyOnList = new CopyOnWriteArrayList<>();
+        LinkedHashMap<Integer,Integer> hashMap = new LinkedHashMap<>();
+        hashMap.put(1,2);
+        hashMap.get(1);
 
 
 

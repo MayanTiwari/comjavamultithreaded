@@ -14,10 +14,14 @@ import java.util.concurrent.LinkedBlockingDeque;
  */
 public class ConcurrentPackageRef {
     public static void main(String[] args){
-        CopyOnWriteArrayList<String> strings1 = new CopyOnWriteArrayList<>();
+       /* CopyOnWriteArrayList<String> strings1 = new CopyOnWriteArrayList<>();
         BlockingDeque<String> stringBlockingDeque = new LinkedBlockingDeque<>();
         Set<Integer> integerSet = new TreeSet<>();
-        TreeMap<Integer,Integer> integerIntegerTreeMap = new TreeMap<>();
-
+        TreeMap<Integer,Integer> integerIntegerTreeMap = new TreeMap<>();*/
+       TreeSet<String> strings = new TreeSet<>();
+      // strings.add(null);
+       strings.add("test");
+       System.out.println(strings);
     }
+
 }

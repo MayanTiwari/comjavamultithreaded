@@ -1,0 +1,20 @@
+Maximum gap problem
+http://www.zrzahid.com/the-%E2%80%A9maximum%E2%80%A9-gap%E2%80%A9-problem-%E2%80%A9pigeonhole-%E2%80%A9principle%E2%80%A9/
+
+a=[5, 3, 1, 8, 9, 2, 4], n=7
+1. Min = 1, Max = 9
+2. Create 7-1 = 6 buckets with equal size (or width), δ = (9-1)/(7-1) = 8/6 = 1.33
+3. Populate bucket with rest of the 5 elements by putting a[i] to bucket number (a[i]-min)/δ.
+Compute max and min in each bucket:
+
+          b0    b1    b2    b3    b4    b5
+         ____________________________________
+        |_2___|__3__|__4__|__5__|______|__8__|
+        ^     ^     ^     ^     ^      ^     ^
+        1    2.33   3.66  5    6.33   7.66   9
+
+4. Identify all the empty buckets i.e. gaps and compute gap value = max of previous nonempty bucket - min of next non-empty bucket.
+   For example, in this case b4 is an empty bucket, previous non empty bucket is b3 and next non-empty bucket is b5.
+   So, gap value at b4 = min(b5) - max(b3) = 8-5 = 3.
+5. Update a global max and iterate over all empty buckets to perform step 3.
+   As there is only one bucket the answer is 3.

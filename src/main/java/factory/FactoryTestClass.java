@@ -6,6 +6,6 @@ package factory;
 public class FactoryTestClass {
     public static void main(String[] args){
         FactoryClass factoryClass = new FactoryClass();
-        Shape shape = factoryClass.getInstance("Circle");
+        Shape shape = FactoryClass.getInstance("Circle");
     }
 }

@@ -21,31 +21,10 @@ public class ConsistentHash<T> {
         al.add("redis2");
         al.add("redis3");
         al.add("redis4");
-        String[] userIds =
-                {"-3641349505369478014"//,
-                       // "-76029520310209",
-                       // "-68343931116147",
-                       // "-54921760962352"
-                };
-        ConsistentHash<String> consistentHash = new ConsistentHash<>(Hashing.md5(),1,al);
-        for (String userId : userIds) {
-            System.out.println(consistentHash.get(userId));
-        }
-       /*String[] userIds =
-                {"-84942321036308",
-                        "-76029520310209",
-                        "-68343931116147",
-                        "-54921760962352"
-                };
-        TreeMap<Long,String> longStringTreeMap = new TreeMap<>();
-        longStringTreeMap.put((long) 12,"aB");
-        longStringTreeMap.put((long) 13,"aC");
-        longStringTreeMap.put((long) 14,"aD");
-        longStringTreeMap.put((long) 15,"aF");
-        out.println(longStringTreeMap.tailMap((long)14));
-        SortedMap<Long, String> tailMap = longStringTreeMap.tailMap((long)14);
-        out.println(tailMap.firstKey());
-*/
+        ConsistentHash<String> consistentHash = new ConsistentHash<>(Hashing.md5(),2,al);
+        consistentHash.remove(al.get(0));
+        Object gKey = consistentHash.get("redis4");
+        Object gKey2 = consistentHash.get("redis2");
     }
     private final HashFunction hashFunction;
     private final int numberOfReplicas;
@@ -85,4 +64,30 @@ public class ConsistentHash<T> {
         }
         return circle.get(hash);
     }
+
+    /*  for (String userId : userIds) {
+            System.out.println(consistentHash.get(userId));
+        }*/
+       /*String[] userIds =
+                {"-84942321036308",
+                        "-76029520310209",
+                        "-68343931116147",
+                        "-54921760962352"
+                };
+        TreeMap<Long,String> longStringTreeMap = new TreeMap<>();
+        longStringTreeMap.put((long) 12,"aB");
+        longStringTreeMap.put((long) 13,"aC");
+        longStringTreeMap.put((long) 14,"aD");
+        longStringTreeMap.put((long) 15,"aF");
+        out.println(longStringTreeMap.tailMap((long)14));
+        SortedMap<Long, String> tailMap = longStringTreeMap.tailMap((long)14);
+        out.println(tailMap.firstKey());
+*/
+/*
+    String[] userIds =
+            {"-3641349505369478014"//,
+                     "-76029520310209",
+                     "-68343931116147",
+                     "-54921760962352"
+            };*/
 }

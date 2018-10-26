@@ -1,13 +1,8 @@
 package interviewbit.bstrees;
 
-import interviewbit.ReverseLL2;
-import sun.reflect.generics.tree.Tree;
-
-import javax.swing.text.html.HTMLDocument;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Iterator;
-import java.util.Stack;
 
 import static java.lang.System.out;
 

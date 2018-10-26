@@ -1,6 +1,5 @@
 package javacollections;
 
-import com.sun.org.apache.xerces.internal.util.SymbolTable;
 
 import java.util.Set;
 import java.util.TreeMap;

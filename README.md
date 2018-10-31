@@ -10,14 +10,14 @@ My POC work and practice :
 	Static classes.
 	Inner classes.
 	Collections .
-2: Design concepts:
+#2: Design concepts:
 	Factory design pattern.
-3: Concepts:
+#3: Concepts:
 	Consistent hashing
 	LRU caching.
 	Producer and consumer problem
 	Reactive programming using rx java.
 	Random number generation.
 	Red Black Tree implementation by robert sedgewick.
-4: Solution to Interview Bit problems. 	
+#4: Solution to Interview Bit problems. 	
 	

@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="49626fa4-9f12-47f0-954f-cfa0a49f9c2c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interviewbit/arrays/NextMaxOfArray.java" afterDir="false" />
+    <list default="true" id="49626fa4-9f12-47f0-954f-cfa0a49f9c2c" name="Default" comment="Added nextmaxofarray">
+      <change afterPath="$PROJECT_DIR$/src/main/java/interviewbit/arrays/AddOneToNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interviewbit/arrays/MaxOfMin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interviewbit/arrays/PerfectPeek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interviewbit/sort/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interviewbit/sort/ShellSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/designs/visitorpattern/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designs/visitorpattern/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interviewbit/ReverseLL2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interviewbit/ReverseLL2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interviewbit/arrays/MaxSumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interviewbit/arrays/MaxSumSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interviewbit/arrays/NextMaxOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interviewbit/arrays/NextMaxOfArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/designs/visitorpattern/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/designs/visitorpattern/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interviewbit/arrays/MaxSumSubArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interviewbit/arrays/MaxSumSubArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interviewbit/arrays/NextMaxOfArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interviewbit/arrays/NextMaxOfArray.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,11 +84,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1bhwBVIHEcEO25rW5ZNMgVLCfZd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548864708887" />
@@ -87,7 +107,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -100,49 +120,15 @@
       <recent name="futures" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.NextMaxOfArray">
+  <component name="RunManager" selected="Application.ReverseLL2">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Fibonacci" />
-      <module name="comjavamultithread" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designs.visitorpattern.MainClass" />
-      <module name="comjavamultithread" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="designs.visitorpattern.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NextMaxOfArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="interviewbit.arrays.NextMaxOfArray" />
+    <configuration name="AddOneToNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interviewbit.arrays.AddOneToNum" />
       <module name="comjavamultithread" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -155,13 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PredicateExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rx.PredicateExample" />
+    <configuration name="MaxSumSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interviewbit.arrays.MaxSumSubArray" />
       <module name="comjavamultithread" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rx.*" />
+          <option name="PATTERN" value="interviewbit.arrays.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,13 +155,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RxMainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rx.updatedversion.RxMainClass" />
+    <configuration name="PerfectPeek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interviewbit.arrays.PerfectPeek" />
       <module name="comjavamultithread" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rx.updatedversion.*" />
+          <option name="PATTERN" value="interviewbit.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseLL2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interviewbit.ReverseLL2" />
+      <module name="comjavamultithread" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interviewbit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShellSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interviewbit.sort.ShellSort" />
+      <module name="comjavamultithread" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interviewbit.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,7 +210,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <option name="vmParameters" />
       <option name="alternativeJrePath" />
@@ -249,22 +263,23 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RxMainClass" />
-      <item itemvalue="Application.PredicateExample" />
-      <item itemvalue="Application.MainClass" />
-      <item itemvalue="Application.Fibonacci" />
-      <item itemvalue="Application.NextMaxOfArray" />
+      <item itemvalue="Application.ShellSort" />
+      <item itemvalue="Application.AddOneToNum" />
+      <item itemvalue="Application.MaxSumSubArray" />
+      <item itemvalue="Application.PerfectPeek" />
+      <item itemvalue="Application.ReverseLL2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NextMaxOfArray" />
-        <item itemvalue="Application.Fibonacci" />
-        <item itemvalue="Application.MainClass" />
-        <item itemvalue="Application.PredicateExample" />
-        <item itemvalue="Application.RxMainClass" />
+        <item itemvalue="Application.ReverseLL2" />
+        <item itemvalue="Application.PerfectPeek" />
+        <item itemvalue="Application.MaxSumSubArray" />
+        <item itemvalue="Application.AddOneToNum" />
+        <item itemvalue="Application.ShellSort" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -276,39 +291,22 @@
       <option name="presentableId" value="Default" />
       <updated>1508692808669</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added nextmaxofarray">
+      <created>1601217251419</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601217251419</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added nextmaxofarray">
+      <created>1601218077827</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601218077828</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="MultiThreadingTests - 2018.01.14 at 17h 06m 41s.xml">
-      <configuration name="MultiThreadingTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiThreadingTests_callableTest - 2017.11.19 at 21h 00m 33s.xml">
-      <configuration name="MultiThreadingTests.callableTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiThreadingTests_callableTest - 2017.11.19 at 21h 01m 09s.xml">
-      <configuration name="MultiThreadingTests.callableTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiThreadingTests_callableTest - 2017.11.19 at 21h 01m 39s.xml">
-      <configuration name="MultiThreadingTests.callableTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiThreadingTests_callableTest - 2018.01.14 at 16h 37m 17s.xml">
-      <configuration name="MultiThreadingTests.callableTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiThreadingTests_executorServiceTestCallable - 2018.01.14 at 17h 05m 31s.xml">
-      <configuration name="MultiThreadingTests.executorServiceTestCallable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiThreadingTests_executorServiceTestCallable - 2018.01.14 at 17h 15m 18s.xml">
-      <configuration name="MultiThreadingTests.executorServiceTestCallable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiThreadingTests_executorServiceTestCallable - 2018.01.14 at 17h 15m 54s.xml">
-      <configuration name="MultiThreadingTests.executorServiceTestCallable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiThreadingTests_executorServiceTestRunnable - 2018.01.14 at 16h 54m 48s.xml">
-      <configuration name="MultiThreadingTests.executorServiceTestRunnable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiThreadingTests_executorServiceTestRunnable - 2018.01.14 at 16h 57m 41s.xml">
-      <configuration name="MultiThreadingTests.executorServiceTestRunnable" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,13 +322,80 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added nextmaxofarray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added nextmaxofarray" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="23" width="1280" height="724" key="#Custom_Plugin_Repositories" timestamp="1601725308600">
+      <screen x="0" y="23" width="1280" height="724" />
+    </state>
+    <state x="0" y="23" width="1280" height="724" key="#Custom_Plugin_Repositories/0.23.1280.724@0.23.1280.724" timestamp="1601725308600" />
+    <state width="470" height="466" key="DebuggerActiveHint" timestamp="1602413517236">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="470" height="466" key="DebuggerActiveHint/0.0.1280.800@0.0.1280.800" timestamp="1602413517236" />
+    <state width="1238" height="219" key="GridCell.Tab.0.bottom" timestamp="1602413488822">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="219" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1602413488822" />
+    <state width="377" height="580" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1602399377597" />
+    <state width="1238" height="219" key="GridCell.Tab.0.center" timestamp="1602413488821">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="219" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1602413488821" />
+    <state width="377" height="580" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1602399377596" />
+    <state width="1238" height="219" key="GridCell.Tab.0.left" timestamp="1602413488820">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="219" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1602413488820" />
+    <state width="377" height="580" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1602399377596" />
+    <state width="1238" height="219" key="GridCell.Tab.0.right" timestamp="1602413488821">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="219" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1602413488821" />
+    <state width="377" height="580" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1602399377596" />
+    <state width="1238" height="219" key="GridCell.Tab.1.bottom" timestamp="1602413489033">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="219" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1602413489033" />
+    <state width="1238" height="185" key="GridCell.Tab.1.bottom/0.23.1280.723@0.23.1280.723" timestamp="1602395137651" />
+    <state width="1238" height="219" key="GridCell.Tab.1.center" timestamp="1602413489032">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="219" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1602413489032" />
+    <state width="1238" height="185" key="GridCell.Tab.1.center/0.23.1280.723@0.23.1280.723" timestamp="1602395137650" />
+    <state width="1238" height="219" key="GridCell.Tab.1.left" timestamp="1602413489031">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="219" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1602413489031" />
+    <state width="1238" height="185" key="GridCell.Tab.1.left/0.23.1280.723@0.23.1280.723" timestamp="1602395137650" />
+    <state width="1238" height="219" key="GridCell.Tab.1.right" timestamp="1602413489033">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="219" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1602413489033" />
+    <state width="1238" height="185" key="GridCell.Tab.1.right/0.23.1280.723@0.23.1280.723" timestamp="1602395137651" />
+    <state x="149" y="24" key="SettingsEditor" timestamp="1602235400191">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state x="149" y="24" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1602235400191" />
+    <state x="149" y="24" key="SettingsEditor/0.23.1280.724@0.23.1280.724" timestamp="1601727098311" />
+    <state x="34" y="70" key="new project wizard" timestamp="1601725710668">
+      <screen x="0" y="23" width="1280" height="724" />
+    </state>
+    <state x="34" y="70" key="new project wizard/0.23.1280.724@0.23.1280.724" timestamp="1601725710668" />
+    <state x="305" y="52" width="670" height="748" key="search.everywhere.popup" timestamp="1602408197245">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="52" width="670" height="748" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1602408197245" />
+    <state x="305" y="70" width="670" height="676" key="search.everywhere.popup/0.23.1280.723@0.23.1280.723" timestamp="1602236202342" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -522,7 +587,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/interviewbit/arrays/MaxSumSubArray.java</url>
-          <line>31</line>
+          <line>30</line>
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -622,8 +687,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/interviewbit/arrays/NextMaxOfArray.java</url>
-          <line>12</line>
+          <line>16</line>
           <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interviewbit/arrays/NextMaxOfArray.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interviewbit/arrays/NextMaxOfArray.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interviewbit/sort/InsertionSort.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interviewbit/sort/ShellSort.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interviewbit/ReverseLL2.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interviewbit/ReverseLL2.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="173" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

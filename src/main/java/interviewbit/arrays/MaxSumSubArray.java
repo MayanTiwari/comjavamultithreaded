@@ -10,10 +10,10 @@ import static java.lang.System.out;
  */
 public class MaxSumSubArray {
     public static void main(String[] args){
-       // List<Integer> integerList = Arrays.asList(-2,1,-3,4,-1,2,1,-5,4);
-        List<Integer> integerList = Arrays.asList(-4,-2);
+        List<Integer> integerList = Arrays.asList(-2,1,-3,4,-1,2,1,-5,4);
+        //List<Integer> integerList = Arrays.asList(-4,-2);
         MaxSumSubArray maxSumSubArray = new MaxSumSubArray();
-        out.println(maxSumSubArray.maxSubArray(integerList));
+        out.println(maxSumSubArray.maxSubArray2(integerList));
     }
     public int maxSubArray2(final List<Integer> A) {
         int maxSoFar = 0;
@@ -25,7 +25,6 @@ public class MaxSumSubArray {
                 maxSoFar = maxEndingHere;
             }
         }
-
         return maxSoFar;
     }
     public int maxSubArray(final List<Integer> A) {

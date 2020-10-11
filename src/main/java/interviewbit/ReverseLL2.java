@@ -1,5 +1,7 @@
 package interviewbit;
 
+import org.w3c.dom.NodeList;
+
 import java.util.Optional;
 
 /**
@@ -24,8 +26,9 @@ public class ReverseLL2 {
         head.next.next.next.next = new ListNode(5);
         head.next.next.next.next.next = new ListNode(6);
         ReverseLL2 reverseLL2 = new ReverseLL2();
-        ListNode.printLL(head);
-        ListNode.printLL(reverseLL2.reverseBetween(head,2,4));
+        //ListNode.printLL(head);
+        //ListNode.printLL(reverseLL2.reverseBetween(head,2,4));
+        reverse2(head);
 
     }
     public ListNode reverseBetween(ListNode A, int B, int C) {
@@ -54,6 +57,20 @@ public class ReverseLL2 {
             prev = curr ;
             curr = listNode;
             count++;
+        }
+        return prev;
+    }
+    public static ListNode reverse2(ListNode head){
+        if(head == null) return null;
+        if(head.next == null) return head;
+        ListNode prev = head;
+        ListNode current = head.next;
+        prev.next = null;
+        while(current !=null){
+            ListNode temp = current.next;
+            current.next = prev;
+            prev = current;
+            current = temp;
         }
         return prev;
     }
